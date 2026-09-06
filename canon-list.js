@@ -47,6 +47,42 @@
     return '<img src="' + escapeAttr(meta.src) + '" alt="' + escapeAttr(meta.alt || '') + '">';
   }
 
+  function isDeceasedCard(card) {
+    var classes = card.classes || [];
+    return classes.indexOf('canonDeceased') !== -1 || !!card.deceasedLabel;
+  }
+
+  // Old Canon List HTML contained a few one-off deceased images. Normalize
+  // every deceased card to the standard DECEASED affiliation icon while
+  // preserving any real club/organization affiliations on that card.
+  function isDeceasedAffiliation(item, data) {
+    if (typeof item === 'string') {
+      return /^DECEASED(?:_|$)/i.test(item);
+    }
+
+    if (!item) return false;
+
+    var alt = String(item.alt || '').toLowerCase();
+    var src = String(item.src || '');
+    var standard = data.affiliations && data.affiliations.DECEASED;
+
+    return alt === 'deceased' || !!(standard && standard.src && src === standard.src);
+  }
+
+  function normalizedAffiliations(card, data) {
+    var items = (card.affiliations || []).slice();
+
+    if (!isDeceasedCard(card)) return items;
+
+    // Remove old/legacy deceased icons, then add exactly one canonical icon.
+    items = items.filter(function (item) {
+      return !isDeceasedAffiliation(item, data);
+    });
+    items.push('DECEASED');
+
+    return items;
+  }
+
   function renderCard(card, data) {
     var classes = ['canonCard'].concat(card.classes || []).join(' ');
     var portraitClasses = card.portraitClasses || ['canonPortrait', 'canonPortraitEmpty'];
@@ -54,7 +90,7 @@
       ? ' style="--portrait:url(\'' + escapeAttr(card.portrait).replace(/'/g, '&#039;') + '\');"'
       : '';
 
-    var affiliations = (card.affiliations || []).map(function (item) {
+    var affiliations = normalizedAffiliations(card, data).map(function (item) {
       return renderAffiliation(item, data);
     }).join('');
 
