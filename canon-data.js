@@ -8775,7 +8775,7 @@ window.CanonDirectoryData = {
               ],
               "portrait": "https://i.imgur.com/orGgIG9.gif",
               "name": "Cross Peltier",
-              "info": "PB: Brandon Sklenar Age: 27",
+              "info": "PB: Ryan Guzman Age: 27",
               "affiliations": [
                 "SAMROCK"
               ],
