@@ -263,7 +263,7 @@ window.CanonDirectoryData = {
               "name": "Betsey Astor Thomas",
               "info": "PB:  Emmy Rossum Age: 44",
               "affiliations": [
-                "DECEASED_LEGACY"
+                "DECEASED"
               ],
               "footer": "CAUSE OF DEATH: Murdered by Thames and Mercedes Vanderbilt",
               "deceasedLabel": "DECEASED",
