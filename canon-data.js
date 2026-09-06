@@ -8773,7 +8773,7 @@ window.CanonDirectoryData = {
               "classes": [
                 "group-none"
               ],
-              "portrait": "https://i.imgur.com/kNBBKjt.gif",
+              "portrait": "https://i.imgur.com/orGgIG9.gif",
               "name": "Cross Peltier",
               "info": "PB: Brandon Sklenar Age: 27",
               "affiliations": [
