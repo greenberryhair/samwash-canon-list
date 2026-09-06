@@ -1,0 +1,4 @@
+[dohtml]
+<div id="canon-directory"></div>
+<script src="https://greenberryhair.github.io/YOUR-REPOSITORY/canon-list/canon-loader.js?v=1"></script>
+[/dohtml]

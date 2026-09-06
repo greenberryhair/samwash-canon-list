@@ -1,0 +1,58 @@
+/*
+ * Canon List external helper CSS
+ * --------------------------------
+ * The current Canon List layout CSS can remain in your JCink stylesheet.
+ * This file centralizes the group-color variables and loader error style.
+ * It is safe to load alongside your existing Canon List CSS.
+ */
+
+.canonCard { --group: #6f7478; }
+.group-none { --group: #6f7478; }
+.group-members { --group: #B8860B; }
+.group-admin, .group-administrator { --group: #990000; }
+.group-apex { --group: #343A40; }
+.group-samwash { --group: #1F75FE; }
+.group-samwash-jr { --group: #4F7899; }
+.group-old-ladies { --group: #9A3E68; }
+.group-family { --group: #306177; }
+.group-law { --group: #708090; }
+.group-mayans { --group: #009900; }
+.group-grove { --group: #336633; }
+.group-grove-jr { --group: #336666; }
+.group-prospect { --group: #FF7F50; }
+.group-jr-prospect { --group: #FFAD8A; }
+.group-samcro { --group: #592667; }
+.group-samcro-jr { --group: #43417B; }
+.group-caracara { --group: #FF0080; }
+.group-sweetbutt { --group: #A94FB3; }
+.group-samreno { --group: #5C8C7E; }
+.group-samreno-jr { --group: #008080; }
+.group-samtong { --group: #343EBC; }
+.group-samtong-jr { --group: #0033FF; }
+.group-sambron { --group: #704241; }
+.group-sambron-jr { --group: #996633; }
+.group-sambro { --group: #FFFACD; }
+.group-sambro-jr { --group: #FFF000; }
+.group-samkan { --group: #CFC000; }
+.group-samkan-jr { --group: #E0CF4F; }
+.group-samla { --group: #D04000; }
+.group-samla-jr { --group: #E67E22; }
+.group-sambig { --group: #DC143C; }
+.group-sambig-jr { --group: #8B0000; }
+.group-samden { --group: #67A9CF; }
+.group-samtaz { --group: #BE5550; }
+.group-samoahu { --group: #D9D2C3; }
+.group-lucifer { --group: #FF3131; }
+.group-samsto { --group: #7F7D22; }
+.group-samrock { --group: #7F3036; }
+
+.canonLoadError {
+  box-sizing: border-box;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 16px;
+  border: 1px solid #7f3036;
+  background: rgba(0,0,0,.65);
+  color: #eee;
+  font: 14px/1.5 Arial, sans-serif;
+}
