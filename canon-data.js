@@ -3260,7 +3260,7 @@ window.CanonDirectoryData = {
                 "69ERS",
                 "DECEASED"
               ],
-              "footer": "CAUSE OF DEATH: Killed by Thane Vanderbilt",
+              "footer": "CAUSE OF DEATH: Killed by Thames Vanderbilt",
               "deceasedLabel": "DECEASED",
               "footerClasses": [
                 "canonPlayedBy",
@@ -3309,7 +3309,7 @@ window.CanonDirectoryData = {
                 "69ERS",
                 "DECEASED"
               ],
-              "footer": "CAUSE OF DEATH: Killed by Thane Vanderbilt",
+              "footer": "CAUSE OF DEATH: Killed by Thames Vanderbilt",
               "deceasedLabel": "DECEASED",
               "footerClasses": [
                 "canonPlayedBy",
@@ -8961,13 +8961,13 @@ window.CanonDirectoryData = {
               "classes": [
                 "group-none"
               ],
-              "portrait": "https://i.imgur.com/5DwTZEy.gif",
+              "portrait": "https://i.imgur.com/4V9zfZZ.gif",
               "name": "Talon Peltier",
-              "info": "PB: Mace Coronel Age: 16",
+              "info": "PB: Curran Walters Age: 16",
               "affiliations": [
                 "SAMROCK"
               ],
-              "footer": "PLAYED BY OPEN",
+              "footer": "PLAYED BY @Angie",
               "side": "right"
             }
           ]
@@ -11035,13 +11035,13 @@ window.CanonDirectoryData = {
               "affiliations": [
                 "DECEASED"
               ],
-              "footer": "CAUSE OF DEATH: Murdered by Thane Vanderbilt",
+              "footer": "CAUSE OF DEATH: Murdered by Thames Vanderbilt",
               "deceasedLabel": "DECEASED",
               "footerClasses": [
                 "canonPlayedBy",
                 "canonDeceasedFooter"
               ],
-              "footerTitle": "Murdered by Thane Vanderbilt",
+              "footerTitle": "Murdered by Thames Vanderbilt",
               "side": "left"
             },
             {
