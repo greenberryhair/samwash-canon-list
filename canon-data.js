@@ -3300,6 +3300,98 @@ window.CanonDirectoryData = {
           "parents": [
             {
               "classes": [
+                "canonDeceased"
+              ],
+              "portrait": "https://i.imgur.com/zKgSMDW.gif",
+              "name": "Clancy Michael Forrester",
+              "info": "PB: Alan Jackson",
+              "affiliations": [
+                "69ERS",
+                "DECEASED"
+              ],
+              "footer": "CAUSE OF DEATH: Killed by Thane Vanderbilt",
+              "deceasedLabel": "DECEASED",
+              "footerClasses": [
+                "canonPlayedBy",
+                "canonDeceasedFooter"
+              ],
+            {
+              "classes": [
+                "canonDeceased"
+              ],
+              "portrait": "https://i.imgur.com/s94eQ9e.gif",
+              "name": "Cassidy Erin Forrester",
+              "info": "PB:  Age: ",
+              "affiliations": [
+                "DECEASED"
+              ],
+              "footer": "CAUSE OF DEATH: Cancer",
+              "deceasedLabel": "DECEASED",
+              "footerClasses": [
+                "canonPlayedBy",
+                "canonDeceasedFooter"
+              ]
+            }
+          ],
+          "children": [
+            {
+              "classes": [
+                "group-none"
+              ],
+              "portrait": "https://i.imgur.com/OnCG4dg.gif",
+              "name": "Callahan James Forrester",
+              "info": "PB: Alan Ritchson Age: 32",
+              "affiliations": [
+                "69ERS"
+              ],
+              "footer": "PLAYED BY OPEN",
+              "side": "left"
+            },
+            {
+              "classes": [
+                "group-none"
+              ],
+              "portrait": "https://i.imgur.com/8YrBAww.gif",
+              "name": "Conall Michael Forrester",
+              "info": "PB: Alan Ritchson Age: 32",
+              "affiliations": [
+                "69ERS"
+              ],
+              "footer": "PLAYED BY OPEN",
+              "side": "right"
+            },
+            {
+              "classes": [
+                "group-none"
+              ],
+              "portrait": "https://i.imgur.com/KkggQFz.gif",
+              "name": "Cade Thomas Forrester",
+              "info": "PB: Mike Vogel Age: 29",
+              "affiliations": [
+                "69ERS"
+              ],
+              "footer": "PLAYED BY OPEN",
+              "side": "left"
+            },
+            {
+              "classes": [
+                "group-none"
+              ],
+              "portrait": "https://i.imgur.com/Xe0V5n6.gif",
+              "name": "Casper Sean Forrester",
+              "info": "PB: Max Thieriot Age: 25",
+              "affiliations": [
+                "69ERS"
+              ],
+              "footer": "PLAYED BY OPEN",
+              "side": "right"
+            }
+          ]
+        },
+        {
+          "parents": [
+            {
+              "classes": [
                 "group-samwash"
               ],
               "portrait": "https://i.imgur.com/gJ8k4tS.gif",
@@ -8911,9 +9003,9 @@ window.CanonDirectoryData = {
               "classes": [
                 "group-none"
               ],
-              "portrait": "https://i.imgur.com/ySdsJGJ.gif",
+              "portrait": "https://i.imgur.com/COOkQeK.gif",
               "name": "Hawke Peltier",
-              "info": "PB: Gavin MacIntosh Age: 17",
+              "info": "PB: Damian McGinty Age: 17",
               "affiliations": [
                 "SAMROCK"
               ],
@@ -8926,7 +9018,7 @@ window.CanonDirectoryData = {
               ],
               "portrait": "https://i.imgur.com/nsFdawP.png",
               "name": "Rook Peltier",
-              "info": "PB: Sam McCarthy Age: 13",
+              "info": "PB: Gavin MacIntosh Age: 13",
               "affiliations": [
                 "SAMROCK"
               ],
