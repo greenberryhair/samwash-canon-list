@@ -9016,7 +9016,7 @@ window.CanonDirectoryData = {
               "classes": [
                 "group-none"
               ],
-              "portrait": "https://i.imgur.com/nsFdawP.png",
+              "portrait": "https://i.imgur.com/ySdsJGJ.gif",
               "name": "Rook Peltier",
               "info": "PB: Gavin MacIntosh Age: 13",
               "affiliations": [
