@@ -3314,7 +3314,8 @@ window.CanonDirectoryData = {
               "footerClasses": [
                 "canonPlayedBy",
                 "canonDeceasedFooter"
-              ],
+              ]
+            },
             {
               "classes": [
                 "canonDeceased"
