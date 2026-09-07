@@ -3320,7 +3320,7 @@ window.CanonDirectoryData = {
               "classes": [
                 "canonDeceased"
               ],
-              "portrait": "https://i.imgur.com/s94eQ9e.gif",
+              "portrait": "https://i.imgur.com/2LMhaJB.png",
               "name": "Cassidy Erin Forrester",
               "info": "PB:  Age: ",
               "affiliations": [
