@@ -20,38 +20,24 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           path = Path('canon-data.js')
           text = path.read_text()
 
-          old = '''              "footerClasses": [
-                "canonPlayedBy",
-                "canonDeceasedFooter"
-              ],
-            {
-              "classes": [
-                "canonDeceased"
-              ],
-              "portrait": "https://i.imgur.com/s94eQ9e.gif",
-              "name": "Cassidy Erin Forrester",'''
+          pattern = re.compile(
+              r'("footerClasses"\s*:\s*\[\s*"canonPlayedBy"\s*,\s*"canonDeceasedFooter"\s*\])\s*,\s*'
+              r'(\{\s*"classes"\s*:\s*\[\s*"canonDeceased"\s*\]\s*,\s*'
+              r'"portrait"\s*:\s*"https://i\.imgur\.com/s94eQ9e\.gif"\s*,\s*'
+              r'"name"\s*:\s*"Cassidy Erin Forrester")'
+          )
 
-          new = '''              "footerClasses": [
-                "canonPlayedBy",
-                "canonDeceasedFooter"
-              ]
-            },
-            {
-              "classes": [
-                "canonDeceased"
-              ],
-              "portrait": "https://i.imgur.com/s94eQ9e.gif",
-              "name": "Cassidy Erin Forrester",'''
+          matches = list(pattern.finditer(text))
+          if len(matches) != 1:
+              raise SystemExit(f'Expected exactly one malformed Forrester block, found {len(matches)}.')
 
-          count = text.count(old)
-          if count != 1:
-              raise SystemExit(f'Expected exactly one malformed Forrester block, found {count}.')
-
-          path.write_text(text.replace(old, new, 1))
+          text = pattern.sub(r'\1\n            },\n            \2', text, count=1)
+          path.write_text(text)
           PY
 
       - name: Validate JavaScript
