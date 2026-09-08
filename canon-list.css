@@ -45,6 +45,7 @@
 .group-lucifer { --group: #FF3131; }
 .group-samsto { --group: #7F7D22; }
 .group-samrock { --group: #7F3036; }
+.group-samrock-jr { --group: #A8646B; }
 
 .canonLoadError {
   box-sizing: border-box;
