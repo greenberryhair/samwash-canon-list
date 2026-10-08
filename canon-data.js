@@ -8898,9 +8898,9 @@ window.CanonDirectoryData = {
               "classes": [
                 "group-none"
               ],
-              "portrait": "https://i.imgur.com/tU7hYHC.gif",
+              "portrait": "https://i.imgur.com/O5jsWWK.gif",
               "name": "Saber Peltier",
-              "info": "PB: Rafael Silva Age: 22",
+              "info": "PB: Ronen Rubinstein Age: 22",
               "affiliations": [
                 "SAMROCK"
               ],
