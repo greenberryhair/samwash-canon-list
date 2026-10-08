@@ -90,6 +90,12 @@ window.CanonDirectoryData = {
       "key": "SAMSTO"
     },
     {
+      "label": "SAMKEY",
+      "src": "https://i.imgur.com/ke1SUQu.png",
+      "alt": "SAMKEY",
+      "key": "SAMKEY"
+    }
+    {
       "label": "WASHINGTON WOLVES",
       "src": "https://i.imgur.com/tI19Rtx.png",
       "alt": "WASHINGTON WOLVES",
