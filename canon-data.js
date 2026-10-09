@@ -3234,7 +3234,7 @@ window.CanonDirectoryData = {
                 "SAMKEY"
               ],
               "footer": "PLAYED BY OPEN"
-            }
+            },
             {
               "classes": [
                 "group-none"
