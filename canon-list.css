@@ -50,6 +50,11 @@
 .group-grim{ --group:#D04000; }
 .group-niners{ --group:#663399; }
 
+/* Preserve the JCink usergroup color on dynamically rendered [user] links. */
+.canonUserLink[class*="group-"]{
+  color:var(--group) !important;
+}
+
 .canonLoadError {
   box-sizing: border-box;
   margin: 20px auto;
