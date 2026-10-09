@@ -51,8 +51,12 @@
         ? ' data-canon-usergroup="' + escapeAttr(groupId) + '"'
         : '';
 
+      var colorStyle = groupClass
+        ? ' style="color:var(--group) !important;"'
+        : '';
+
       result += escapeHtml(source.slice(last, match.index));
-      result += '<a class="' + escapeAttr(classes) + '"' + groupAttr +
+      result += '<a class="' + escapeAttr(classes) + '"' + groupAttr + colorStyle +
         ' href="index.php?showuser=' + encodeURIComponent(match[1]) + '">' +
         escapeHtml(match[3]) + '</a>';
       last = re.lastIndex;
