@@ -3290,7 +3290,7 @@ window.CanonDirectoryData = {
             },
             {
               "classes": [
-              "group-samkeyjr"
+              "group-samkey-jr"
               ],
               "portrait": "https://i.imgur.com/vOlPvMd.gif",
               "name": "[user=117,44]Skyler Ash Falcon[/user]",
