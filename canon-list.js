@@ -15,20 +15,46 @@
     return escapeHtml(value).replace(/`/g, '&#096;');
   }
 
+  // Map JCink usergroup IDs used by Canon List profile tags to the
+  // matching Canon List group classes. The color itself still comes from
+  // canon-list.css, so group colors only need to be maintained in one place.
+  var userGroupClassById = {
+    '3': 'group-none',
+    '4': 'group-admin',
+    '8': 'group-samwash',
+    '9': 'group-samwash-jr',
+    '10': 'group-old-ladies',
+    '11': 'group-family',
+    '16': 'group-prospect',
+    '17': 'group-samcro',
+    '21': 'group-samreno',
+    '25': 'group-samreno-jr',
+    '35': 'group-apex',
+    '44': 'group-samkey-jr'
+  };
+
   // JCink parses [user] BBCode only when a post is saved. Because this
   // directory is rendered after page load, convert those tags to normal
-  // profile links ourselves.
+  // profile links ourselves while preserving the optional JCink group ID.
   function forumText(value) {
     var source = String(value == null ? '' : value);
-    var re = /\[user=(\d+)(?:,\d+)?\]([\s\S]*?)\[\/user\]/gi;
+    var re = /\[user=(\d+)(?:,(\d+))?\]([\s\S]*?)\[\/user\]/gi;
     var result = '';
     var last = 0;
     var match;
 
     while ((match = re.exec(source)) !== null) {
+      var groupId = match[2] || '';
+      var groupClass = groupId ? userGroupClassById[groupId] : '';
+      var classes = 'canonUserLink' + (groupClass ? ' ' + groupClass : '');
+      var groupAttr = groupId
+        ? ' data-canon-usergroup="' + escapeAttr(groupId) + '"'
+        : '';
+
       result += escapeHtml(source.slice(last, match.index));
-      result += '<a href="index.php?showuser=' + encodeURIComponent(match[1]) + '">' +
-        escapeHtml(match[2]) + '</a>';
+      result += '<a class="' + escapeAttr(classes) + '"' + groupAttr +
+        ' href="index.php?showuser=' + encodeURIComponent(match[1]) + '">' +
+        escapeHtml(match[3]) + '</a>';
       last = re.lastIndex;
     }
 
