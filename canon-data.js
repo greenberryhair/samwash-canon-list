@@ -61,7 +61,7 @@ window.CanonDirectoryData = {
     },
     {
       "label": "SAMLA",
-      "src": "https://i.imgur.com/mfOS3Sh.png",
+      "src": "https://i.imgur.com/6JCRMjV.png",
       "alt": "SAMLA",
       "key": "SAMLA"
     },
